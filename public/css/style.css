@@ -57,10 +57,11 @@ button {
   user-select: none !important;
 } */
 input {
-  /* appearance: none;
--webkit-appearance: none;
--ms-appearance: none;
--moz-appearance: none; */
-  outline: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  outline: none !important;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
