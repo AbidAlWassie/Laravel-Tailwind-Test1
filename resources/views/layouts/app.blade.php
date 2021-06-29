@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>App Test1</title>
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body class="bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-100">
