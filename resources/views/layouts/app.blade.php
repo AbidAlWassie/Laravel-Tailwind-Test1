@@ -14,16 +14,23 @@
   <nav class="p-6 bg-white dark:bg-gray-900 flex justify-between mb-6">
 
     <ul class="flex items-center">
-      <li><a href="javascript:void(0)" class="p-3">Home</a></li>
-      <li><a href="javascript:void(0)" class="p-3">Dashboard</a></li>
-      <li><a href="javascript:void(0)" class="p-3">Post</a></li>
+      <li><a href="/" class="p-3">Home</a></li>
+      <li><a href="{{ route('dashboard') }}" class="p-3">Dashboard</a></li>
+      <li><a href="{{ route('posts') }}" class="p-3">Post</a></li>
     </ul>
 
     <ul class="flex items-center">
+
+      @auth
       <li><a href="javascript:void(0)" class="p-3">Abid Al Wassie</a></li>
+      <li><a href="javascript:void(0)" class="p-3">Logout</a></li>
+      @endauth
+
+      @guest
       <li><a href="javascript:void(0)" class="p-3">Login</a></li>
       <li><a href="{{ route('register') }}" class="p-3">Register</a></li>
-      <li><a href="javascript:void(0)" class="p-3">Logout</a></li>
+      @endguest
+
     </ul>
 
   </nav>

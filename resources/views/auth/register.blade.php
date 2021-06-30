@@ -3,15 +3,15 @@
 @section('content')
 
   <div class="flex justify-center">
-    <div class="w-6/12 bg-white p-6 rounded-lg dark:bg-gray-900 dark:text-gray-100">
+    <div class="w-4/12 bg-white p-6 rounded-lg dark:bg-gray-900 dark:text-gray-100">
 
-    <form action="{{ route('register') }}" method="POST">
+    <form id="register" action="{{ route('register') }}" method="POST">
       @csrf
 
       {{-- Name Field --}}
       <div class="mb-4">
-        <label for="name" class="sr-only">Name</label>
-        <input type="text" name="name" id="name" placeholder="Your name" class="text-gray-200 leading-tight focus:outline-none focus:bg-gray-800 focus:border-blue-500 bg-gray-900 opacity-70 border-2 border-gray-500 w-full p-4 rounded-lg @error('name') border-red-500 @enderror" value="{{ old('name') }}">
+        <label for="name" class="">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your name" class="text-gray-200 leading-tight mt-1 focus:outline-none focus:bg-gray-800 focus:border-blue-500 bg-gray-900 opacity-70 border-2 border-gray-500 w-full p-4 rounded-lg @error('name') border-red-500 @enderror" value="{{ old('name') }}">
         @error('name')
           <div class="text-red-500 text-sm inline p-1">
             {{ $message }}
@@ -21,8 +21,8 @@
 
       {{-- Username Field --}}
       <div class="mb-4">
-        <label for="username" class="sr-only">Username</label>
-        <input type="text" name="username" id="username" placeholder="Your username" class="text-gray-200 leading-tight focus:outline-none focus:bg-gray-800 focus:border-blue-500 bg-gray-900 opacity-70 border-2 border-gray-500 w-full p-4 rounded-lg @error('username') border-red-500 @enderror" value="{{ old('username') }}">
+        <label for="username" class="">Username</label>
+        <input type="text" name="username" id="username" placeholder="Your username" class="text-gray-200 leading-tight mt-1 focus:outline-none focus:bg-gray-800 focus:border-blue-500 bg-gray-900 opacity-70 border-2 border-gray-500 w-full p-4 rounded-lg @error('username') border-red-500 @enderror" value="{{ old('username') }}">
         @error('username')
           <div class="text-red-500 text-sm inline p-1">
             {{ $message }}
@@ -32,8 +32,8 @@
 
       {{-- Email Field --}}
       <div class="mb-4">
-        <label for="email" class="sr-only">Email</label>
-        <input type="text" name="email" id="email" placeholder="Your email" class="text-gray-200 leading-tight focus:outline-none focus:bg-gray-800 focus:border-blue-500 bg-gray-900 opacity-70 border-2 border-gray-500 w-full p-4 rounded-lg @error('email') border-red-500 @enderror" value="{{ old('email') }}">
+        <label for="email" class="">Email</label>
+        <input type="text" name="email" id="email" placeholder="Your email" class="text-gray-200 leading-tight mt-1 focus:outline-none focus:bg-gray-800 focus:border-blue-500 bg-gray-900 opacity-70 border-2 border-gray-500 w-full p-4 rounded-lg @error('email') border-red-500 @enderror" value="{{ old('email') }}">
         @error('email')
           <div class="text-red-500 text-sm inline p-1">
             {{ $message }}
@@ -43,8 +43,8 @@
 
       {{-- Password Field --}}
       <div class="mb-4">
-        <label for="password" class="sr-only">Password</label>
-        <input type="password" name="password" id="password" placeholder="Enter your password" class="text-gray-200 leading-tight focus:outline-none focus:bg-gray-800 focus:border-blue-500 bg-gray-900 opacity-70 border-2 border-gray-500 w-full p-4 rounded-lg @error('password') border-red-500 @enderror" value="">
+        <label for="password" class="">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" class="text-gray-200 leading-tight mt-1 focus:outline-none focus:bg-gray-800 focus:border-blue-500 bg-gray-900 opacity-70 border-2 border-gray-500 w-full p-4 rounded-lg @error('password') border-red-500 @enderror" value="">
         @error('password')
           <div class="text-red-500 text-sm inline p-1">
             {{ $message }}
@@ -54,8 +54,8 @@
 
       {{-- Confirm Password Field --}}
       <div class="mb-4">
-        <label for="password_confirmation" class="sr-only">Confirm Password</label>
-        <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Repeat your password" class="text-gray-200 leading-tight focus:outline-none focus:bg-gray-800 focus:border-blue-500 bg-gray-900 opacity-70 border-2 border-gray-500 w-full p-4 rounded-lg @error('password_confirmation') border-red-500 @enderror" value="">
+        <label for="password_confirmation" class="">Confirm Password</label>
+        <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Repeat your password" class="text-gray-200 leading-tight mt-1 focus:outline-none focus:bg-gray-800 focus:border-blue-500 bg-gray-900 opacity-70 border-2 border-gray-500 w-full p-4 rounded-lg @error('password_confirmation') border-red-500 @enderror" value="">
         @error('password_confirmation')
           <div class="text-red-500 text-sm inline p-1">
             {{ $message }}

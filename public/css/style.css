@@ -1,4 +1,4 @@
-html {
+html.dark {
   color-scheme: dark;
   scrollbar-color: #686868 #424242;
 }
@@ -63,5 +63,10 @@ input {
   outline: none !important;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+}
+
+#register label {
+  margin-bottom: 5px;
+  color: #cfcfcf;
 }
 /*# sourceMappingURL=style.css.map */
