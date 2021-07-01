@@ -4,6 +4,8 @@
 
   <div class="flex justify-center">
     <div class="w-4/12 bg-white p-6 rounded-lg dark:bg-gray-900 dark:text-gray-100">
+      
+      <h3 class="form-heading text-center">Register</h3>
 
     <form id="register" action="{{ route('register') }}" method="POST">
       @csrf

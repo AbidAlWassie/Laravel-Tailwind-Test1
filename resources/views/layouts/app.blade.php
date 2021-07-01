@@ -21,15 +21,13 @@
 
     <ul class="flex items-center">
 
-      @auth
+      @if (auth()->user())
       <li><a href="javascript:void(0)" class="p-3">Abid Al Wassie</a></li>
       <li><a href="javascript:void(0)" class="p-3">Logout</a></li>
-      @endauth
-
-      @guest
-      <li><a href="javascript:void(0)" class="p-3">Login</a></li>
+      @else
+      <li><a href="{{ route('login') }}" class="p-3">Login</a></li>
       <li><a href="{{ route('register') }}" class="p-3">Register</a></li>
-      @endguest
+      @endif
 
     </ul>
 
